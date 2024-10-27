@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management Web App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+        .navbar {
+            background-color: #007bff; 
+        }
+        .footer {
+            background-color: #007bff; 
+            color: #fff;
+            position: fixed; 
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+      
+        #loginForm {
+            margin-top: 20px; 
+            padding: 20px; 
+            border: 1px solid #007bff; 
+            border-radius: 5px;
+            background-color: #f8f9fa; 
+            width: 300px; 
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+        h2 {
+            margin-top: 20px; 
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Employee Management</a>
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="employeelist.html">Employee List</a></li>
+                <li class="nav-item"><a class="nav-link" href="add-employee.html">Add Employee</a></li>
+                <li class="nav-item"><a class="nav-link active" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Employee Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Name</label>
+                <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="userId">ID</label>
+                <input type="text" class="form-control" id="userId" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Log In</button>
+        </form>
+    </div>
+
+ 
+    <footer class="footer text-center py-3">
+        <p>&copy; 2024 Employee Management Web App</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

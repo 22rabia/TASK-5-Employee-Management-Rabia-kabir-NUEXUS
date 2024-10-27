@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management Web App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+        .navbar {
+            background-color: #007bff; 
+        }
+        .footer {
+            background-color: #007bff; 
+            color: #000;
+        }
+        
+        .dashboard-container {
+            margin: 20px; 
+            padding: 20px; 
+            border: 1px solid #007bff; 
+            border-radius: 5px;
+            background-color: #f8f9fa; 
+        }
+        h2 {
+            margin-bottom: 20px; 
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+ 
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Employee Management</a>
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="employeelist.html">Employee List</a></li>
+                <li class="nav-item"><a class="nav-link" href="add-employee.html">Add Employee</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link active" href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <h2>Task Dashboard</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Deadline</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="taskTableBody">
+                
+            </tbody>
+        </table>
+    </div>
+
+   
+    <footer class="footer text-center py-3">
+        <p>&copy; 2024 Employee Management Web App</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
